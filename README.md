@@ -1,20 +1,21 @@
-## TemplateDevEnv
+## Deeper Dark
+A Minecraft 1.12.2 mod to customize the Extra Utilities Deep Dark dimension.
 
-Template workspace for modding Minecraft 1.12.2. Licensed under MIT, it is made for public use.
+### How it works
+The mod uses the power of Mixins to replace the Deep Dark IChunkProvider (the class responsible for the placement of blocks and worldgen features) with my own version
 
-This template currently utilizies **Gradle 8.1.1** + **[RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) 1.3.27** + **Forge 14.23.5.2847**.
+### Features
+The mod features the ability to customize the following properties:
+- Floor and Ceiling height
+- Bedrock Thickness and roughness
+- Surface and ceiling thickness and roughness
+- Block replacement for Bedrock floor, ground, surface, spires, ceiling surface, ceiling and bedrock ceiling, water/lava in water/lava lakes
+- Spire girth (height is adjusted automatically depending on ground and ceiling height)
+- Stalactite maximum height
+- Generation of Water and Lava lakes
+- Generation of structures and dungeons
+- Generation of caves and ravines
 
-With **coremod and mixin support** that is easy to configure.
-
-### Instructions:
-
-1. Click `use this template` at the top.
-2. Clone the repository you have created with this template.
-3. In the local repository, run the command `gradlew setupDecompWorkspace`
-4. Open the project folder in IDEA.
-5. Right-click in IDEA `build.gradle` of your project, and select `Link Gradle Project`, after completion, hit `Refresh All` in the gradle tab on the right.
-6. Run `gradlew runClient` and `gradlew runServer`, or use the auto-imported run configurations in IntelliJ like `1. Run Client`.
-
-### Mixins:
-
-- When writing Mixins on IntelliJ, it is advisable to use latest [MinecraftDev Fork for RetroFuturaGradle](https://github.com/eigenraven/MinecraftDev/releases).
+### What's missing?
+- Ability to configure Biomes -> Use JustEnoughDimension to override the BiomeProvider
+- Ability to un-ban Dirt, Gravel, Diorite, Andesite and Granite generation -> Use mods like CoFH world to generate them

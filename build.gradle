@@ -92,6 +92,9 @@ repositories {
             includeGroup 'curse.maven'
         }
     }
+    maven {
+        url "https://minecraft.curseforge.com/api/maven/"
+    }
     mavenLocal() // Must be last for caching to work
 }
 
@@ -105,10 +108,12 @@ dependencies {
 
     // Example of deobfuscating a dependency
     // implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
+    implementation rfg.deobf('curse.maven:extrautils2-225561:2678374')
+    //implementation rfg.deobf('extra-utilities:extrautils2:1.12:1.9.9')
 
     if (project.use_mixins.toBoolean()) {
         // Change your mixin refmap name here:
-        String mixin = modUtils.enableMixins('org.spongepowered:mixin:0.8.3', "mixins.${project.archives_base_name}.refmap.json")
+        String mixin = modUtils.enableMixins('org.spongepowered:mixin:0.8.3', "mixins.deeperdarker.refmap.json")
         api (mixin) {
             transitive = false
         }

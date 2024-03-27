@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.smokeythebandicoot.deeperdark.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "mixins.deeperdarker.refmap.json",
+  "mixins": [
+    "WorldProviderDeepDarkMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}

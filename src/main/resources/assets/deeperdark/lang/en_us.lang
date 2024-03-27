@@ -1,0 +1,49 @@
+config.main.mod_configuration=Mod configuration
+config.main.bedrock_floor=Bedrock Floor configuration
+config.main.ground=Ground configuration
+config.main.air_layer=Air Layer configuration
+config.main.spires=Spires configuration
+config.main.ceiling=Ceiling configuration
+config.main.bedrock_ceiling=Bedrock Ceiling configuration
+config.main.structure=Structure configuration
+
+config.modconfig.main=Master Switch
+
+config.bedrock_floor.max_height=Max Height
+config.bedrock_floor.replacement=Block replacement
+
+config.ground.height=Height
+config.ground.thickness=Thickness
+config.ground.replacement=Block replacement
+config.ground.surface_replacement=Surface Block replacement
+config.ground.roughness=Roughness
+
+config.air.max_height=Max height
+config.air.replacement=Block Replacement
+
+config.spires.inner_radius=Inner radius
+config.spires.outer_radius=Outer radius
+config.spires.replacement=Block replacement
+
+config.ceiling.height=Height
+config.ceiling.surface_replacement=Surface Block replacement
+config.ceiling.replacement=Block replacement
+
+config.bedrock_ceiling.height=Height
+config.bedrock_ceiling.thickness=Thickness
+config.bedrock_ceiling.replacement=Block replacement
+
+config.structures.scattered_features=Scattered Features
+config.structures.mineshafts=Mineshafts
+config.structures.caves=Caves
+config.structures.ravines=Ravines
+config.structures.dungeons=Dungeons
+config.structures.water_lakes=Water Lakes
+config.structures.water_replacement=Water replacement
+config.structures.lava_lakes=Lava Lakes
+config.structures.lava_replacement=Lava replacement
+
+config.blockstate.registry_name=Registry Name
+config.blockstate.meta=Meta
+
+
