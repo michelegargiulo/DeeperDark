@@ -42,6 +42,10 @@ config.structures.water_lakes=Water Lakes
 config.structures.water_replacement=Water replacement
 config.structures.lava_lakes=Lava Lakes
 config.structures.lava_replacement=Lava replacement
+config.structures.water_lakes_min_height=Water Lakes min height
+config.structures.water_lakes_max_height=Water Lakes max height
+config.structures.lava_lakes_min_height=Lava Lakes min height
+config.structures.lava_lakes_max_height=Lava Lakes max height
 
 config.blockstate.registry_name=Registry Name
 config.blockstate.meta=Meta

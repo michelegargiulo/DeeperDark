@@ -272,14 +272,14 @@ public class ChunkProviderDeeperDark extends ChunkProviderDeepDark {
         if (this.waterLakeGenerator != null && !villageHasGenerated && this.random.nextInt(4) == 0) {
             this.waterLakeGenerator.generate(this.world, this.random, blockpos.add(
                     this.random.nextInt(16) + 8,
-                    this.random.nextInt(256),
+                    this.random.nextInt(ModConfig.StructureSpawn.waterLakesMaxHeight - ModConfig.StructureSpawn.waterLakesMinHeight) + ModConfig.StructureSpawn.waterLakesMinHeight,
                     this.random.nextInt(16) + 8));
         }
 
         if (this.lavaLakeGenerator != null && !villageHasGenerated && this.random.nextInt(8) == 0) {
             BlockPos lakePos = blockpos.add(
                     this.random.nextInt(16) + 8,
-                    this.random.nextInt(this.random.nextInt(248) + 8),
+                    this.random.nextInt(ModConfig.StructureSpawn.lavaLakesMaxHeight - ModConfig.StructureSpawn.lavaLakesMinHeight) + ModConfig.StructureSpawn.lavaLakesMinHeight,
                     this.random.nextInt(16) + 8);
             if (lakePos.getY() < groundEnd || this.random.nextInt(10) == 0) {
                 this.lavaLakeGenerator.generate(this.world, this.random, lakePos);

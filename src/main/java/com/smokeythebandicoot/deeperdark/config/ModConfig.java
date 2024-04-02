@@ -214,6 +214,14 @@ public class ModConfig {
         @Config.LangKey("config.structures.water_lakes")
         public static boolean enableWaterLakes = true;
 
+        @Config.Comment("Water Lakes minimum generation height. XU default is 1")
+        @Config.LangKey("config.structures.water_lakes_min_height")
+        public static int waterLakesMinHeight = 1;
+
+        @Config.Comment("Water Lakes minimum generation height. XU default is 256. Recommended to lower it at least to <250 to avoid holes in the bedrock ceiling")
+        @Config.LangKey("config.structures.water_lakes_max_height")
+        public static int waterLakesMaxHeight = 256;
+
         @Config.Comment("Block replacement for water in water lakes. Ignores Meta! Generates some stone and cobblestone blocks.")
         @Config.RequiresMcRestart
         @Config.LangKey("config.structures.water_replacement")
@@ -223,6 +231,14 @@ public class ModConfig {
         @Config.RequiresMcRestart
         @Config.LangKey("config.structures.lava_lakes")
         public static boolean enableLavaLakes = true;
+
+        @Config.Comment("Lava Lakes minimum generation height. XU default is 1")
+        @Config.LangKey("config.structures.lava_lakes_min_height")
+        public static int lavaLakesMinHeight = 1;
+
+        @Config.Comment("Lava Lakes minimum generation height. XU default is 256. Recommended to lower it at least to <250 to avoid holes in the bedrock ceiling")
+        @Config.LangKey("config.structures.lava_lakes_max_height")
+        public static int lavaLakesMaxHeight = 256;
 
         @Config.Comment("Block replacement for lava in lava lakes. Ignores Meta! Generates some stone, cobblestone and water blocks.")
         @Config.RequiresMcRestart
